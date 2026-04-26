@@ -1,0 +1,95 @@
+:root {
+  --bg-primary: #0d0e14;
+  --bg-secondary: #13151f;
+  --bg-card: #1a1d2e;
+  --bg-card-hover: #1f2338;
+  --border: #2a2d42;
+  --border-bright: #3a3d5c;
+  --text-primary: #e8eaf6;
+  --text-secondary: #8b90b8;
+  --text-muted: #5a5f7a;
+  --accent: #5b6ef5;
+  --accent-hover: #7b8ef7;
+  --accent-glow: rgba(91, 110, 245, 0.3);
+  --success: #55ff55;
+  --danger: #ff5555;
+  --warning: #ffaa00;
+
+  --div-1: #9e9e9e;
+  --div-2: #e0e0e0;
+  --div-3: #ffff55;
+  --div-4: #ff55ff;
+  --div-5: #ffaa00;
+  --div-6: #55ffff;
+  --div-7: #55ff55;
+  --div-8: #ff5555;
+  --div-9: #cc44ff;
+  --div-10: #aaaaaa;
+  --div-top: #5b6ef5;
+
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--bg-primary);
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(91, 110, 245, 0.12), transparent);
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+input {
+  font-family: inherit;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track { background: var(--bg-secondary); }
+::-webkit-scrollbar-thumb { background: var(--border-bright); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+
+.pixel-font {
+  font-family: 'Press Start 2P', monospace;
+}
+
+.div-color-1  { color: var(--div-1); }
+.div-color-2  { color: var(--div-2); }
+.div-color-3  { color: var(--div-3); }
+.div-color-4  { color: var(--div-4); }
+.div-color-5  { color: var(--div-5); }
+.div-color-6  { color: var(--div-6); }
+.div-color-7  { color: var(--div-7); }
+.div-color-8  { color: var(--div-8); }
+.div-color-9  { color: var(--div-9); }
+.div-color-10 { color: var(--div-10); }
+.div-color-top { color: var(--div-top); }
